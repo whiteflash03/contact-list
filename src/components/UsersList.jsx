@@ -3,14 +3,13 @@ import axios from "axios";
 import Divider from "@mui/material/Divider";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 
 const UsersList = () => {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    axios.get("https://randomuser.me/api/?results=50").then((response) => {
+    axios.get("https://randomuser.me/api/?results=70").then((response) => {
       const data = response.data.results;
       setUsers(data);
     });

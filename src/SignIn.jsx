@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { styled } from "@mui/system";
 import { TextField, Button, Box, Typography } from "@mui/material";
-import PrivateRoute from "./privateRoute/PrivateRoute";
 import { useNavigate } from "react-router-dom";
 import { blueGrey } from "@mui/material/colors";
 
@@ -53,12 +52,14 @@ const SignIn = () => {
         padding: "0 100px",
         height: "auto",
         width: "40%",
-      }}>
+      }}
+    >
       <Typography
         sx={{
           textAlign: "center",
           fontSize: "30px",
-        }}>
+        }}
+      >
         Sign In
       </Typography>
       <form onSubmit={formik.handleSubmit}>
