@@ -26,7 +26,7 @@ function NavBar() {
   };
 
   if (isLoggedOut) {
-    return <Navigate to={"/login"} />;
+    return <Navigate to={"/"} />;
   }
 
   return (

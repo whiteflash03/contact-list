@@ -38,7 +38,7 @@ const SignIn = () => {
         alert("Success");
         setLoggedIn(true);
         window.localStorage.setItem("Token", isLoggedIn);
-        navigate("/");
+        navigate("/home");
       } else {
         alert("username is foo & password is bar 😉😜");
       }
